@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SDG 4 Quality Education Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body style="display:flex; flex-direction:column; align-items:center; text-align:center;">
+
+<header class="hero">
+    <h1>Student Progress System</h1>
+    <p>Quality Education for all.</p>
+</header>
+
+<section id="topics">
+    <h2>Explore Topics</h2>
+    <div class="cards-container">
+        <div class="card" data-topic="math">Math</div>
+        <div class="card" data-topic="science">Science</div>
+        <div class="card" data-topic="english">English</div>
+    </div>
+</section>
+
+<section id="lessons">
+    <h2>Lessons</h2>
+    <div class="cards-container" id="lessons-container"></div>
+</section>
+
+<section id="progress">
+    <h2>Your Progress</h2>
+    <div class="progress-section">
+        <button id="reset-btn" class="btn-complete" style="background-color:#f44336;">Reset Progress</button>
+        <div id="progress-bars"></div>
+        <p id="total-completed">Total lessons completed: 0/0</p>
+    </div>
+</section>
+
+<!-- COMMENT SECTION -->
+<section id="comments">
+    <h2>Student Comments</h2>
+
+    <div class="comment-box">
+        <textarea id="comment-input" placeholder="Write your comment here..."></textarea>
+        <button id="post-comment">Post Comment</button>
+    </div>
+
+    <div id="comments-list"></div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
